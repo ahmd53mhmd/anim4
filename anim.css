@@ -1,0 +1,133 @@
+
+body{
+	margin: 0px; padding: 0px;
+	background-color: black;
+}
+*{
+	margin: 0px; padding: 0px;
+}
+#img{
+	position: absolute; top: 0px; left: 0px;
+	width: 100%; height: 100%;
+	background-image: url("back.jpg");
+	opacity: 0.2;
+}
+
+#sun{
+	width: 220px; height: 220px;
+	position: absolute; top: 30%; left: 40%;
+	transform: translate(-50%, -50%);
+}
+.sunB{
+	width: 220px; height: 3px;
+	border-radius: 50%;
+	background-color: #ffe000;
+	position: absolute; top: 50%; left: 50%;
+}
+#sun div:nth-of-type(1)	{ transform: translate(-50%, -50%) rotate(  0deg); animation: sun1  30s linear infinite; }
+#sun div:nth-of-type(2)	{ transform: translate(-50%, -50%) rotate( 20deg); animation: sun2  30s linear infinite; }
+#sun div:nth-of-type(3)	{ transform: translate(-50%, -50%) rotate( 40deg); animation: sun3  30s linear infinite; }
+#sun div:nth-of-type(4)	{ transform: translate(-50%, -50%) rotate( 60deg); animation: sun4  30s linear infinite; }
+#sun div:nth-of-type(5)	{ transform: translate(-50%, -50%) rotate( 80deg); animation: sun5  30s linear infinite; }
+#sun div:nth-of-type(6)	{ transform: translate(-50%, -50%) rotate(100deg); animation: sun6  30s linear infinite; }
+#sun div:nth-of-type(7)	{ transform: translate(-50%, -50%) rotate(120deg); animation: sun7  30s linear infinite; }
+#sun div:nth-of-type(8)	{ transform: translate(-50%, -50%) rotate(140deg); animation: sun8  30s linear infinite; }
+#sun div:nth-of-type(9)	{ transform: translate(-50%, -50%) rotate(160deg); animation: sun9  30s linear infinite; }
+#sun div:nth-of-type(10){ transform: translate(-50%, -50%) rotate(180deg); animation: sun10 30s linear infinite; }
+#sun #circle{
+	width: 150px; height: 150px;
+	background-color: #ffe000;
+	border-radius: 50%;
+	position: absolute; top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+#cloud1{
+	width: 360px; height: 220px;
+	position: absolute; top: 42%; left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	animation: cloud 5s linear infinite alternate;
+}
+
+#cloud1 #bottom1{
+	width: 360px; height: 120px;
+	background-color: white;
+	border-radius: 120px;
+	position: absolute; bottom: 0px;
+}
+#cloud1 #bigCircle1{
+	width: 200px; height: 200px; 
+	background-color: white;
+	border-radius: 50%;
+	position: absolute; top: 0px; left: 120px;
+}
+#cloud1 #smallCircle1{
+	width: 120px; height: 120px; 
+	background-color: white;
+	border-radius: 50%;
+	position: absolute; top: 50px; left: 40px;
+}
+
+
+
+
+
+
+
+@keyframes cloud{
+	0%{
+		transform: translate(-80%, -50%);
+		visibility: visible;
+	}
+	100%{
+		transform: translate(-40%, -50%);
+		visibility: hidden;
+	}
+}
+
+@keyframes sun1{
+	0%{   transform: translate(-50%, -50%) rotate(0deg); }
+	100%{ transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes sun2{
+	0%{   transform: translate(-50%, -50%) rotate( 20deg); }
+	100%{ transform: translate(-50%, -50%) rotate(380deg); }
+}
+@keyframes sun3{
+	0%{   transform: translate(-50%, -50%) rotate( 40deg); }
+	100%{ transform: translate(-50%, -50%) rotate(400deg); }
+}
+@keyframes sun4{
+	0%{   transform: translate(-50%, -50%) rotate( 60deg); }
+	100%{ transform: translate(-50%, -50%) rotate(420deg); }
+}
+@keyframes sun5{
+	0%{   transform: translate(-50%, -50%) rotate( 80deg); }
+	100%{ transform: translate(-50%, -50%) rotate(440deg); }
+}
+@keyframes sun6{
+	0%{   transform: translate(-50%, -50%) rotate(100deg); }
+	100%{ transform: translate(-50%, -50%) rotate(460deg); }
+}
+@keyframes sun7{
+	0%{   transform: translate(-50%, -50%) rotate(120deg); }
+	100%{ transform: translate(-50%, -50%) rotate(480deg); }
+}
+@keyframes sun8{
+	0%{   transform: translate(-50%, -50%) rotate(140deg); }
+	100%{ transform: translate(-50%, -50%) rotate(500deg); }
+}
+@keyframes sun9{
+	0%{   transform: translate(-50%, -50%) rotate(160deg); }
+	100%{ transform: translate(-50%, -50%) rotate(520deg); }
+}
+@keyframes sun10{
+	0%{   transform: translate(-50%, -50%) rotate(180deg); }
+	100%{ transform: translate(-50%, -50%) rotate(540deg); }
+}
